@@ -1,0 +1,1 @@
+# Write a Python program to add two sprites and create a custom event of changing the colour of the sprites.
