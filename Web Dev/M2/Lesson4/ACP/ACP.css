@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe4f1;
+  color: #4a2c4a;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+/* MAIN HEADING */
+h1 {
+  color: #e91e8c;
+  font-size: 40px;
+  text-shadow: 2px 2px 0 #ffd1e8;
+  margin-bottom: 16px;
+}
+
+/* SIBLING SELECTOR: styles only the p that comes directly after h1 */
+h1 + p {
+  background-color: #fff3a8;
+  color: #7a3e00;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* SHOP DESCRIPTION: ::first-letter */
+.shop-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.shop-description::first-letter {
+  color: #e91e8c;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #6a4fb3;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+/* FLAVOUR LIST: child selector (ul > li) */
+.flavour-list {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.flavour-list > li {
+  background-color: #ffffff;
+  border: 3px solid #ffb3d9;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* :nth-child highlights the third flavour as the special */
+.flavour-list > li:nth-child(3) {
+  background-color: #8b4513;
+  border-color: #5a2d0c;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ORDER BUTTON: hover effect */
+.order-button {
+  background-color: #e91e8c;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #6a4fb3;
+}

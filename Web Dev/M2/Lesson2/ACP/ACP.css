@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND: colour + patterned image with repeat, position and attachment */
+body {
+  background-color: #8ecae6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='15' cy='15' r='5' fill='%23ffffff' fill-opacity='0.35'/%3E%3Ccircle cx='45' cy='45' r='5' fill='%23ffffff' fill-opacity='0.35'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  color: #1d3557;
+  padding: 32px 16px;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+/* WEATHER CARD: linear-gradient */
+.weather-card {
+  background: linear-gradient(135deg, #ffb703, #fb8500, #f15bb5);
+  color: #ffffff;
+  max-width: 420px;
+  margin: 0 auto 32px;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.temperature {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.condition {
+  font-size: 20px;
+}
+
+/* WEATHER ICON: CSS animation with @keyframes */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px;
+  background-color: #fff176;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 10px rgba(255, 241, 118, 0.8);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+/* FORECAST SECTION: radial-gradient */
+.forecast {
+  background: radial-gradient(circle, #ffffff, #bde0fe);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.forecast h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* FORECAST DAYS: five simple boxes */
+.forecast-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.day {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #457b9d;
+  border-radius: 12px;
+  padding: 12px;
+  width: 120px;
+  text-align: center;
+}
+
+.day h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.day p {
+  font-size: 16px;
+}

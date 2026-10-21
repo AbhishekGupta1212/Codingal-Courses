@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoo Rescue Tracker</title>
+  <link rel="stylesheet" href="ACP.css">
+</head>
+
+<body>
+  <!-- FIXED: stays visible at the top while scrolling -->
+  <div class="rescue-alert">Rescue Alert: Three animals need help today. Call the rescue team!</div>
+
+  <h1>Zoo Rescue Tracker</h1>
+  <p class="intro">Scroll down to follow the animals that have been rescued and the ones still waiting for help.</p>
+
+  <!-- ZONE 1 -->
+  <section class="zone">
+    <!-- STICKY: sticks near the top while you scroll through this zone -->
+    <h2 class="zone-label">Forest Rescue Zone</h2>
+
+    <!-- ABSOLUTE: the SAFE tag and ID sit inside this card -->
+    <div class="animal-entry panda-card">
+      <span class="safe-tag">SAFE</span>
+      <h3>Panda</h3>
+      <p>Found hungry near the bamboo fence. The panda is now eating well and resting in the forest shelter.</p>
+      <span class="card-id">ID: ZR-101</span>
+    </div>
+
+    <!-- RELATIVE: moved 35px from its normal place -->
+    <div class="animal-entry rescued-koala">
+      <h3>Koala</h3>
+      <p>Rescued from a fallen tree after the storm. The koala is recovering and has started climbing again.</p>
+    </div>
+
+    <!-- STATIC: normal page flow -->
+    <div class="animal-entry">
+      <h3>Red Panda</h3>
+      <p>Spotted alone on the east path. The vet is checking its paw and it will be ready to return soon.</p>
+    </div>
+
+    <div class="animal-entry">
+      <h3>Sloth</h3>
+      <p>Slipped from a branch and needs gentle care. The keepers are giving it soft food and rest.</p>
+    </div>
+  </section>
+
+  <!-- ZONE 2 -->
+  <section class="zone">
+    <h2 class="zone-label">Savanna Rescue Zone</h2>
+
+    <div class="animal-entry">
+      <h3>Lion Cub</h3>
+      <p>Separated from its pride during the heavy rain. The cub is warm, fed and being reunited with its family.</p>
+    </div>
+
+    <div class="animal-entry">
+      <h3>Elephant Calf</h3>
+      <p>Got stuck in mud near the watering hole. The team pulled it out safely and it is walking normally.</p>
+    </div>
+
+    <div class="animal-entry">
+      <h3>Giraffe</h3>
+      <p>Had a small cut on its leg. The vet cleaned the wound and will check it again tomorrow.</p>
+    </div>
+
+    <div class="animal-entry">
+      <h3>Zebra Foal</h3>
+      <p>Wandered away from the herd. The foal is back with its mother and doing well.</p>
+    </div>
+  </section>
+</body>
+</html>

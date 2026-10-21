@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartoon Character Card</title>
+
+  <!-- INTERNAL CSS: written inside the style tag in the head section -->
+  <style>
+    /* Universal selector: styles ALL elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+
+    /* Element selector: body */
+    body {
+      background-color: #cfe8ff;
+      color: #222222;
+      padding: 40px 16px;
+    }
+
+    /* Element selector: h1 */
+    h1 {
+      color: #1b4f9c;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    /* Element selector: h2 */
+    h2 {
+      color: #d62828;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    /* Element selector: p */
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    /* ID selector: styles one unique card */
+    #cartoon-card {
+      background-color: #fff3b0;
+      border: 5px solid #1b4f9c;
+      border-radius: 16px;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* Class selector: styles repeated details */
+    .cartoon-detail {
+      background-color: #ffffff;
+      color: #333333;
+      font-size: 18px;
+      font-weight: bold;
+      border-left: 6px solid #f77f00;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Cartoon Character Card</h1>
+
+  <div id="cartoon-card">
+    <h2>SpongeBob SquarePants</h2>
+
+    <!-- INLINE CSS: style attribute directly inside the p tag -->
+    <p style="color: #6a4c93; font-size: 20px; font-weight: bold; text-align: center;">
+      The cheerful fry cook from Bikini Bottom!
+    </p>
+
+    <p class="cartoon-detail">Home: A pineapple under the sea</p>
+    <p class="cartoon-detail">Job: Fry cook at the Krusty Krab</p>
+    <p class="cartoon-detail">Best friend: Patrick Star</p>
+    <p class="cartoon-detail">Favorite activity: Jellyfishing</p>
+  </div>
+</body>
+</html>

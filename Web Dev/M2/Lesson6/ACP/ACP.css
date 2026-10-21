@@ -1,0 +1,110 @@
+body {
+  background-color: #eef7e6;
+  color: #234018;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 70px 20px 40px 20px; /* top space so the fixed alert does not cover the heading */
+}
+
+h1 {
+  text-align: center;
+  color: #2e6b1f;
+  margin: 10px 0;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.zone {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* FIXED POSITIONING: stays visible while scrolling */
+.rescue-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #d32f2f;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+}
+
+/* STICKY POSITIONING: sticks 50px from the top (just below the fixed alert) */
+.zone-label {
+  position: sticky;
+  top: 50px;
+  background-color: #2e6b1f;
+  color: #ffffff;
+  padding: 12px;
+  margin: 0 0 15px 0;
+  z-index: 10;
+}
+
+/* STATIC POSITIONING (default): entries stay in the normal page flow */
+.animal-entry {
+  position: static;
+  background-color: #ffffff;
+  border: 2px solid #8bc34a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  min-height: 90px;
+}
+
+.animal-entry h3 {
+  margin: 0 0 8px 0;
+  color: #2e6b1f;
+}
+
+.animal-entry p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* RELATIVE POSITIONING: moves the koala 35px from its normal place */
+.rescued-koala {
+  position: relative;
+  left: 35px;
+  background-color: #e3f2fd;
+  border-color: #42a5f5;
+}
+
+/* The panda card is positioned (relative) so the absolute tags
+   inside it are placed from the card's corners, not the page's */
+.panda-card {
+  position: relative;
+}
+
+/* ABSOLUTE POSITIONING: SAFE tag in the top-right corner of the panda card */
+.safe-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #43a047;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* PLACEMENT PROPERTIES: bottom and left place the ID in the bottom-left corner */
+.card-id {
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  font-size: 13px;
+  color: #777777;
+}
+
+.panda-card {
+  padding-bottom: 40px; /* leaves room for the ID at the bottom */
+}

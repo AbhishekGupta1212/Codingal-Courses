@@ -1,0 +1,83 @@
+/* The default box-sizing (content-box) is used on purpose, so the
+   width below is the CONTENT area and padding, border and margin are added around it. */
+
+body {
+  background-color: #e8f5e9;
+  color: #1b3a2a;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Wrapper that holds everything */
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* INTRO BOX: width, padding, border, margin
+   Total width = 900 + (30 x 2) + (4 x 2) = 968px */
+.intro-box {
+  width: 900px;
+  padding: 30px;
+  border: 4px solid #2e7d32;
+  margin: 0 auto 20px auto;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.intro-box h1 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+}
+
+.intro-box p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ROUTINE CARDS: box model + float
+   Total width of one card = 270 + (20 x 2) + (3 x 2) + (5 x 2) = 326px
+   Three cards = 978px, so they fit side by side in the 980px container */
+.routine-card {
+  float: left;
+  width: 270px;
+  padding: 20px;
+  border: 3px solid #ff8f00;
+  margin: 5px;
+  background-color: #fff8e1;
+  text-align: center;
+}
+
+.routine-card h3 {
+  margin: 0 0 10px 0;
+  color: #e65100;
+  font-size: 22px;
+}
+
+.routine-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* CLEAR SECTION: moves the next content below the floated cards */
+.clear-section {
+  clear: both;
+}
+
+/* FITNESS NOTE: width, padding, border, margin */
+.fitness-note {
+  width: 900px;
+  padding: 20px;
+  border: 4px dashed #2e7d32;
+  margin: 20px auto 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.fitness-note p {
+  margin: 0;
+}
